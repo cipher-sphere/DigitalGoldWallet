@@ -22,7 +22,7 @@ public class Users {
 
     @ManyToOne
     @JoinColumn(name = "address_id")
-    private Address address;
+    private Addresses address;
 
     public Users() {}
 
@@ -42,6 +42,6 @@ public class Users {
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 
-    public Address getAddress() { return address; }
-    public void setAddress(Address address) { this.address = address; }
+    public Addresses getAddress() { return address; }
+    public void setAddress(Addresses address) { this.address = address; }
 }

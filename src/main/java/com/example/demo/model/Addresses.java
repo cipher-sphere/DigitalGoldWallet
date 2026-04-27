@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "addresses")
-public class Address {
+public class Addresses {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class Address {
 
     private String country;
 
-    public Address() {}
+    public Addresses() {}
 
     // Getters & Setters
     public Integer getAddressId() { return addressId; }
